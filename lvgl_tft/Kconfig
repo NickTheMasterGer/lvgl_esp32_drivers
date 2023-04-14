@@ -198,6 +198,14 @@ menu "LVGL TFT Display controller"
             bool "Landscape inverted"
     endchoice
 
+    config LV_HOR_RES_MAX
+        int
+        default 320 if CONFIG_LV_HOR_RES_MAX
+
+    config LV_VER_RES_MAX
+        int
+        default 240 if CONFIG_LV_VER_RES_MAX
+
     config LV_DISPLAY_ORIENTATION
         int
         default 0 if DISPLAY_ORIENTATION_PORTRAIT
