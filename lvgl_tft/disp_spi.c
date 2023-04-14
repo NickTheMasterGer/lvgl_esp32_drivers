@@ -309,8 +309,9 @@ static void IRAM_ATTR spi_ready(spi_transaction_t *trans)
 #else /* Before v7 */
         disp = lv_refr_get_disp_refreshing();
 #endif
-
-        lv_disp_flush_ready(&disp->driver);
+       //lv_disp_flush_ready(&disp->driver);
+       //lv_disp_flush_ready(disp->driver);
+       lv_disp_flush_ready(disp);
     }
 
     if (chained_post_cb) {
