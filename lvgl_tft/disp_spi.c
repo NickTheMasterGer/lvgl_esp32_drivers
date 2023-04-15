@@ -311,7 +311,7 @@ static void IRAM_ATTR spi_ready(spi_transaction_t *trans)
 #endif
        //lv_disp_flush_ready(&disp->driver);
        //lv_disp_flush_ready(disp->driver);
-       lv_disp_flush_ready(disp)
+       lv_disp_flush_ready(disp);
     }
 
     if (chained_post_cb) {

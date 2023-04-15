@@ -148,7 +148,7 @@ void st7789_enable_backlight(bool backlight)
 /* The ST7789 display controller can drive 320*240 displays, when using a 240*240
  * display there's a gap of 80px, we need to edit the coordinates to take into
  * account that gap, this is not necessary in all orientations. */
-void st7789_flush(lv_disp_drv_t * drv, const lv_area_t * area, lv_color_t * color_map)
+void st7789_flush(lv_fs_drv_t * drv, const lv_area_t * area, lv_color_t * color_map)
 {
     uint8_t data[4] = {0};
 

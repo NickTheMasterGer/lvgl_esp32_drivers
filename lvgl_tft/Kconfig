@@ -199,12 +199,18 @@ menu "LVGL TFT Display controller"
     endchoice
 
     config LV_HOR_RES_MAX
-        int
-        default 320 if CONFIG_LV_HOR_RES_MAX
+        int "Display Maximun Horizontal Resolution (OLD: LV_HOR_RES_MAX)" 
+        default 320
+
+        help
+            Configure the Horizontal Max Reolution
 
     config LV_VER_RES_MAX
-        int
-        default 240 if CONFIG_LV_VER_RES_MAX
+        int "Display Maximun Vertical Resolution (OLD: LV_VER_RES_MAX)" 
+        default 240
+
+        help
+            Configure the Vertical Max Reolution
 
     config LV_DISPLAY_ORIENTATION
         int
